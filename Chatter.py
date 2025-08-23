@@ -25,6 +25,9 @@ import json
 import csv
 import soundfile as sf
 from chatterbox.src.chatterbox.vc import ChatterboxVC
+import matplotlib
+matplotlib.use('Agg')
+
 SETTINGS_PATH = "settings.json"
 #THIS IS THE START
 def load_settings():
@@ -1715,3 +1718,4 @@ def main():
         demo.launch(share=True)
 if __name__ == "__main__":
     main()
+
